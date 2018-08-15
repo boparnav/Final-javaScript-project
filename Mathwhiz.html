@@ -1,0 +1,355 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Javascript Project I</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>	
+#wrapper{
+         
+         background-color:white;
+         
+		 }
+#header{
+      
+		 height:100px;
+}
+.header-text{
+
+font-family: Verdana,Arial,Helvetica,sans-serif;
+
+padding-bottom: 20px;
+font-size: 56pt;
+}
+#navigation{
+     height:200px;
+	 margin-left:105px;
+	 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}	
+#content {
+border-style: solid;
+margin-left:100px;
+margin-right:50px;
+height:300px;
+}
+
+#sub-content{
+   margin-left:100px;
+   }	
+#footer{
+text-align:center;
+ margin-left:50px;
+margin-right:15px;
+} 
+</style>
+<script>
+function addIt()
+				{
+			levelOne();
+function levelOne()
+			{
+			var count1=1; var choice="y"; var num=0; var countX=1;
+			var choice = prompt("if you want to continue the test type 'y' for yes or 'n' for no:"," ");
+			if ((choice =="y") || (choice =="y"))
+			{num= count1; choice="y"}
+			else if ((choice !="y") || (choice !="y"))
+			 { num = parseInt(prompt("How may problems in total do you want to try?"," ")); choice="n";}
+			 while(((choice =="y") && (count1<6)) ||((choice =="n") && (countX<= num)))
+			 {
+			   var num1a=(Math.floor(Math.random() * 10)) +1;
+			   var num1b=(Math.floor(Math.random() * 10)) +1;
+			   var sum1= num1a+num1b;
+			    var response= parseInt(prompt("what is the sum of "+num1a+"and"+num1b+"?"));
+				if (response == sum1)
+				{count1=count1+1;   var result="correct!";
+				alert (result);
+				}
+				else 
+				{
+				result ="Incorrect"; alert(result);
+                 }
+                 countX= countX+1
+                  }
+                       alert("You completed "+(countX-1)+"Problem and got"+(count1-1)+"correct.");
+ 
+                                                                        // level two
+                   var move= prompt("Do you want to move to level two? type'y' for yes or 'n' to end the session"," ");
+                            if (( move =="y") || (move=="y"))
+                      {
+	levelTwo();
+						}
+					else alert("This session is ended");
+						}
+function levelTwo()
+				{
+             var count2=1; var choice="y"; var num=0;
+				var countX=1;
+					var choice= prompt("Do you want to continue only until you get 5 correct  answer, type'y' for yes or 'n' for no:"," " );
+			if ((choice =="y") || (choice =="y"))
+						{
+						num =count2; choice="y";
+									}
+	  else if ((choice !="y")||(choice!="y"))
+	  {
+	  num =parseInt(prompt("How many problems in total do you want try"," ")); choice="n";
+	  }
+			 
+}
+while(((choice =="y") && (count2<6))|| ((choice =="n") && (countX <= num)))
+{
+var num2a =(Math.floor(Math.random()*100))+1;
+var num2b =(Math.floor(Math.random()*100))+1;
+
+var sum2= num2a+num2b;
+var response=parseInt(prompt("what is the sum of "+num2a+"and"+num2b+"?"));
+if (response ==sum2)
+{
+count2=count2+1; var result="correct1";
+alert(result);
+}
+else
+{
+result ="incorrect"; alert(result);
+}
+countX=countX+1
+}
+alert("you completed"+(countX-1)+"problems and got "+(count2-1)+"correct");
+var move=prompt("do you want to move to level three? type 'y' for yes  or 'n'to end this session"," ");
+if ((move =="y") ||(move=="y"))
+{
+levelThree();
+}
+else 
+alert("this is end of session");
+}
+function levelThree()
+{
+var count3=1; var choice ="y"; var num=0 ; var countX=1;
+var choice =prompt("Do you want to continue up to 5 correct answer or type 'y' for yes or type'n' to end session"," ");
+if (( choice=="y") || (choice=="y"))
+{
+num=count3; choice ="y";
+}
+else if (( choice!="y") || (choice!="y"))
+{
+num= parseInt(prompt("how many problems do you want to try" ," "));
+  choice = "n";
+  }
+  while ((( choice =="y") && (count3 < 6)) || (( choice == "n")  && ( countX <= num)))
+  {
+  var numa3a =(Math.floor(Math.random()*100))+1;
+var num3b =(Math.floor(Math.random()*100))+1;
+var num3c =(Math.floor(Math.random()*100))+1;
+
+var sum3= num3a+num3b+nuum3c;
+var response = parseInt(prompt (" what is the sum of " + num3a + "," + num3b + ", and" +num3c + "?"));
+ if (response ==sum3)
+ { 
+ count3= count3 + 1;
+ var result = "correct" ;
+  alert(result);
+  }
+  else 
+  {
+  result = "incorrect";
+  alert (result);
+  }
+  countX = CountX+1
+  }
+  
+  alert ("you completed "+ (countX-1) + "problems and got " +(count3-1) + "correct");
+   var move = prompt("do you want to move to substraction? Type 'y' for yes or 'n' to end this session"," ");
+   if ((move == "y") || ( move == "y"))
+   {
+   alert("click the substraction button to begin now" ," ");
+   }
+   else alert ("End this session");
+   }
+   
+   
+      //// substraction
+   function subIt()
+   {
+   levelOne()
+   function levelOne()
+   {
+   var count1=1; var choice="y"; var num=0; var countX=1;
+			var choice = prompt("if you want to continue the test type 'y' for yes or 'n' for no:"," ");
+			if ((choice =="y") || (choice =="y"))
+			{num= count1; choice="y"}
+			else if ((choice !="y") || (choice !="y"))
+			 { num = parseInt(prompt("How may problems in total do you want to try?"," ")); choice="n";}
+			 while(((choice =="y") && (count1<6)) ||((choice =="n") && (countX <= num)))
+			 {
+			   var num1a=(Math.floor(Math.random() * 10)) +1;
+			   var num1b=(Math.floor(Math.random() * 10)) +1;
+			   if (num1a >= num1b)
+			   { 
+			   var diff1 = num1a- num1b;
+			    var resonse = parseInt(prompt ("how much is "+ num1a + " minus" + num1b + " ?"));
+				}
+					else
+						{
+						var diff1=num1b -num1a;
+						var response = parseInt(pompt ("how much is "+ num1b+"minus"+num1a +"?"));
+						}
+						if (response == diff1)
+						{
+						count1 =count1 +1;
+						var result="correct";
+						alert(result);
+						}
+						else 
+						{
+						result ="incorrect";
+						alert (result);
+						}
+						countX =countX+1
+						}
+						alert ("you completed" + (countX -1) + "problems and got " + (count1-1) + "correct");
+						
+						
+						
+						var move =prompt ("do you want to move to level two ,type 'y' for yes or 'n' to end the session", " ");
+						  if ((move == "y") || (move == "y"))
+						  {
+						  levelTwo();
+						  }
+						  else alert("end this session");
+						  }
+						  function levelTwo()
+   {
+   var count2=1; var choice="y"; var num=0; var countX=1;
+			var choice = prompt("if you want to continue the test type 'y' for yes or 'n' for no:"," ");
+			if ((choice =="y") || (choice =="y"))
+			{num= count2; choice="y"}
+			else if ((choice !="y") || (choice !="y"))
+			 { num = parseInt(prompt("How may problems in total do you want to try?"," ")); choice="n";}
+			 while(((choice =="y") && (count2<6)) ||((choice =="n") && (countX <= num)))
+			 {
+			   var num2a=(Math.floor(Math.random() * 10)) +1;
+			   var num2b=(Math.floor(Math.random() * 10)) +1;
+			   if (num2a >= num2b)
+			   { 
+			   var diff2 = num2a- num2b;
+			    var resonse = parseInt(prompt ("how much is "+ num2a + " minus" + num2b + " ?"));
+				}
+					else
+						{
+						var diff2=num2b -num2a;
+						var response = parseInt(pompt ("how much is "+ num2b+"minus"+num2a +"?"));
+						}
+						if (response == diff2)
+						{
+						count2 =count2 +1;
+						var result="correct";
+						alert(result);
+						}
+						else 
+						{
+						result ="incorrect";
+						alert (result);
+						}
+						countX =countX+1
+						}
+						alert ("you completed" + (countX -1) + "problems and got " + (count2-1) + "correct");
+						  alert ("Congratulations! you have completed both levels of substraction. Your session is ended.");
+						  }
+						  }
+						
+            			</script>
+</head>
+<body>	
+<div id="wrapper">
+<div id="header">
+	<div class="row">
+	
+		
+			<div class="col-lg-5">
+				<div class="header-logo">
+				  <img src="images/owl.jpeg" width="125" height="66" class="floatleft">
+				</div></div>
+				<div class="col-lg-7">
+				<div class="header-text"><h1><b><i> carla's Classroom</i></b></h1>
+			</div>
+
+
+
+
+</div>
+</div>
+</div>
+<div id ="navigation"><ul>
+ <li><a href="index.html" >
+ <img src="images/owlr.jpg" width="35" height="50" target="blank">
+Home</a></li>
+ <li> <a href="#" >
+ <img src="images/carla_button.jpg" width="35" height="50" target="blank">
+Meet Carla</a></li>
+ <li> <a href="#" >
+ <img src="images/read_button.jpg" width="35" height="50" target="blank">
+Reading</a></li>
+ <li> <a href="spelltest.html" >
+ <img src="images/write_button.jpg" width="35" height="50" target="blank">
+writing</a></li>
+  <li><a href="#" >
+ <img src="images/arith_button.jpg" width="35" height="50" target="blank">
+Arithmatic</a></li></ul>
+<ul><li><a href="Aboutme.html" >
+ <img src="images/carla_kids.jpg" width="35" height="50" target="blank">
+About  Me!</a></li></ul>
+
+
+
+</div>
+<div id="content">
+
+<p><h1> Become Math Whiz</h1><br>
+There are two parts of this arithmatic test One is addition and other is substraction, you can choose to move to another
+ part after giving 5 right answers to the first partor you can set your own limit for tests</p>
+ <input type="button" onclick="addIt()" value="Begin the addition test"><br>
+ <input type="button" onclick="subIt()" value="Begin the substraction test">
+ 
+</div>
+<div id="sub-content"><p>
+<h3><span class="style1">*</span><span class="style3">Carla's Motto: </span><span class="style2">Never miss a chance to 
+teach -- and to<br> learn!</span></h3></p>
+</div>
+<div id="footer">
+<span class="specialh4">
+<span class="style2">**</span>Answer: Even though Writing and Arithmetic don't start with the letter R, 
+if you say them aloud: Reading, Writing, and 'Rithmetic, 
+they all sound like words that begin with R. </span>
+</div>
+</div>
+
+		
+</body>
+</html>

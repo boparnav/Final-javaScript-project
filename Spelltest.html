@@ -1,0 +1,194 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Javascript Project A</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>	
+#wrapper{
+         
+         background-color:white;
+         
+		 }
+#header{
+      
+		 height:100px;
+}
+.header-text{
+
+font-family: Verdana,Arial,Helvetica,sans-serif;
+
+padding-bottom: 20px;
+font-size: 56pt;
+}
+#navigation{
+     height:200px;
+	 margin-left:105px;
+	 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}	
+#content {
+border-style: solid;
+margin-left:100px;
+margin-right:50px;
+}
+img {
+    
+   
+    margin: 0px 0px 15px 20px;
+}
+#sub-content{
+   margin-left:100px;
+   }	
+   </style>
+   <script>
+   var word1="avocado";
+   var word2="bananas";
+   var word3="celery";
+   var word4="lemonade";
+   var word5="onions";
+   var result= " ";
+   function showPrompt1()
+						{
+						word1=prompt("Enter your answer");
+						result=(word1 =="avocado")?"you're right!":
+						"sorry ,that's incorrect";
+						}
+	function showResult1(){
+							alert(result);
+							}
+	function showPrompt2()
+							{
+							word2=prompt("Enter your answer");
+							result=(word2 =="bananas")?"you're right!":
+							"sorry ,that's incorrect";
+							}
+	function showResult2(){
+						alert(result);
+						}
+	function showPrompt3()
+						{
+						word3=prompt("Enter your answer");
+						result=(word3 =="celery")?"you're right!":
+						"sorry ,that's incorrect";
+						}
+	function showResult3(){
+							alert(result);
+							}
+	function showPrompt4()
+						{
+							word4=prompt("Enter your answer");
+							result=(word4 =="lemonade")?"you're right!":
+								"sorry ,that's incorrect";
+						}
+	function showResult4(){
+							alert(result);
+							}	
+	function showPrompt5()
+   {
+    word5=prompt("Enter your answer");
+	result=(word5 =="onion")?"you're right!":
+	"sorry ,that's incorrect";
+	}
+	function showResult5(){
+	alert(result);
+	}
+	
+	
+  </script>
+</head>
+<body>	
+<div id="wrapper">
+<div id="header">
+	<div class="row">
+	
+		
+			<div class="col-lg-5">
+				<div class="header-logo">
+				  <img src="images/owl.jpeg" width="125" height="66" class="floatleft">
+				</div></div>
+				<div class="col-lg-7">
+				<div class="header-text"><h1><b><i> carla's Classroom</i></b></h1>
+			</div>
+</div>
+</div>
+</div>
+<div id ="navigation"><ul>
+ <li><a href="index.html" >
+ <img src="images/owlr.jpg" width="35" height="50" target="blank">
+Home</a></li>
+ <li> <a href="#" >
+ <img src="images/carla_button.jpg" width="35" height="50" target="blank">
+Meet Carla</a></li>
+ <li> <a href="#" >
+ <img src="images/read_button.jpg" width="35" height="50" target="blank">
+Reading</a></li>
+ <li> <a href="spelltest.html" >
+ <img src="images/write_button.jpg" width="35" height="50" target="blank">
+writing</a></li>
+  <li><a href="#" >
+ <img src="images/arith_button.jpg" width="35" height="50" target="blank">
+Arithmatic</a></li></ul>
+<ul><li><a href="Aboutme.html" >
+ <img src="images/carla_kids.jpg" width="35" height="50" target="blank">
+About  Me!</a></li></ul>
+
+
+
+</div>
+<div id="content">
+
+<p><h1>
+Ready for Spell test</h1></p>
+<p>Question 1:What is this?<img src="images/avocado.jpg" width="35" height="50"></p>
+<input type= "button" onclick="showPrompt1()" value="answer q. 1">
+<input type =" button" onclick="showResult1()" value="check answer">
+<p>Question 2:What is this?<img src="images/banana.jpg" width="35" height="50"></p>
+<input type= "button" onclick="showPrompt2()" value="answer q. 2">
+<input type =" button" onclick="showResult2()" value="check answer">
+<p>Question 3:What is this?<img src="images/celery.jpg" width="35" height="50"></p>
+<input type= "button" onclick="showPrompt3()" value="answer q. 3">
+<input type =" button" onclick="showResult3()" value="check answer">
+<p>Question 4:What is this?<img src="images/lemonade.jpg" width="35" height="50"></p>
+<input type= "button" onclick="showPrompt4()" value="answer q. 4">
+<input type =" button" onclick="showResult4()" value="check answer">
+<p>Question 5:What is this?<img src="images/onions.jpg" width="35" height="50"></p>
+<input type= "button" onclick="showPrompt5()" value="answer q. 5">
+<input type =" button" onclick="showResult5()" value="check answer">
+
+</div>
+<div id="sub-content"><p>
+<h3><span class="style1">*</span><span class="style3">Carla's Motto: </span><span class="style2">Never miss a chance to 
+teach -- and to<br> learn!</span></h3></p>
+</div>
+</div>
+
+		
+</body>
+</html>

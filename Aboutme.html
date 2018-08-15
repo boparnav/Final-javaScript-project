@@ -1,0 +1,167 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Javascript Project A</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>	
+#wrapper{
+         
+         background-color:white;
+         
+		 }
+#header{
+      
+		 height:100px;
+}
+.header-text{
+
+font-family: Verdana,Arial,Helvetica,sans-serif;
+
+padding-bottom: 20px;
+font-size: 56pt;
+}
+#navigation{
+     height:200px;
+	 margin-left:105px;
+	 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}	
+#content {
+border-style: solid;
+margin-left:100px;
+margin-right:50px;
+}
+img {
+    
+   
+    margin: 0px 0px 15px 20px;
+}
+#sub-content{
+   margin-left:100px;
+   }	
+   </style>
+   <script>
+   function getName()
+   {var name=prompt("What's your name?"," ");
+   document.getElementById('myName').innerHTML=name;
+   }
+    
+	function getAge()
+   {var age=prompt("How old are you?"," ");
+   document.getElementById('myAge').innerHTML=age;
+   }
+    
+	function getSubject()
+   {var subject=prompt("What do you like best in school?"," ");
+   document.getElementById('mySubject').innerHTML = subject;
+   }
+    
+	function getTeacher()
+   {var teacher=prompt("Who is your favourite teacher?"," ");
+   document.getElementById('myTeacher').innerHTML = teacher;
+   }
+   </script>
+   
+</head>
+<body>	
+<div id="wrapper">
+<div id="header">
+	<div class="row">
+	
+		
+			<div class="col-lg-5">
+				<div class="header-logo">
+				  <img src="images/owl.jpeg" width="125" height="66" class="floatleft">
+				</div></div>
+				<div class="col-lg-7">
+				<div class="header-text"><h1><b><i> carla's Classroom</i></b></h1>
+			</div>
+
+
+
+
+</div>
+</div>
+</div>
+<div id ="navigation"><ul>
+ <li><a href="index.html" >
+ <img src="images/owlr.jpg" width="35" height="50" target="blank">
+Home</a></li>
+ <li> <a href="#" >
+ <img src="images/carla_button.jpg" width="35" height="50" target="blank">
+Meet Carla</a></li>
+ <li> <a href="#" >
+ <img src="images/read_button.jpg" width="35" height="50" target="blank">
+Reading</a></li>
+ <li> <a href="#" >
+ <img src="images/write_button.jpg" width="35" height="50" target="blank">
+writing</a></li>
+  <li><a href="#" >
+ <img src="images/arith_button.jpg" width="35" height="50" target="blank">
+Arithmatic</a></li></ul>
+<ul><li><a href="Aboutme.html" >
+ <img src="images/carla_kids.jpg" width="35" height="50" target="blank">
+About  Me!</a></li></ul>
+
+
+
+</div>
+<div id="content">
+
+<p>
+<img width="105" height="80" src="images/basketball.jpg" class="floatleft"></p>
+<p>
+<button type="button" onclick="getName()">Enter your name here!
+</button>
+Hi there,<span id="myName"> Little fella</span>
+</p>
+<p><button type="button" onclick="getAge()">Enter your age here
+</button>
+You're <span id="myAge">??? </span>&nbsp;years old? wow!
+</p>
+<p><button type="button" onclick="getSubject()">Enter your favourite subject</button>
+You like <span id="mySubject"> ??? </span>&nbsp;best.
+we'll do a lot of that here</p>
+<p><button type="button" onclick="getTeacher()">Who is your favourite teacher</button>
+You like <span id="myTeacher"> carla</span>&nbsp;Wow
+</p>
+
+<p>
+<img width="75" height="50" src="images/boy.jpg" class="floatright"></p>
+</div>
+<div id="sub-content"><p>
+<h3><span class="style1">*</span><span class="style3">Carla's Motto: </span><span class="style2">Never miss a chance to 
+teach -- and to<br> learn!</span></h3></p>
+</div>
+</div>
+
+		
+</body>
+</html>

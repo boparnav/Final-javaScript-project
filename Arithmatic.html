@@ -1,0 +1,367 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Javascript Project I</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>	
+#wrapper{
+         
+         background-color:white;
+         
+		 }
+#header{
+      
+		 height:100px;
+}
+.header-text{
+
+font-family: Verdana,Arial,Helvetica,sans-serif;
+
+padding-bottom: 20px;
+font-size: 56pt;
+}
+#navigation{
+     height:200px;
+	 margin-left:105px;
+	 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}	
+#content {
+border-style: solid;
+margin-left:100px;
+margin-right:50px;
+height:300px;
+}
+
+#sub-content{
+   margin-left:100px;
+   }	
+#footer{
+text-align:center;
+ margin-left:50px;
+margin-right:15px;
+} 
+<script>
+function addIt()
+{
+var num1a =0;
+var num1b =0;
+var sum1 =0;
+var count1 = 0;
+var response =" ";
+var result = " ";
+levelOne();
+function levelOne ()
+{
+var num1a = (Math.floor(Math.random()*10)) +1;
+var num1b = (Math.floor(Math.random()*10)) +1;
+var sum 1 = num1a +num1b;
+var response = parseInt(prompt("what is the sum of" +num1a + "and " +num1b +"?"));
+if ( response ==sum1)
+{
+count1 =count1 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count1 ==3)
+{
+levelTwo();
+return;
+}
+
+var num1a = (Math.floor(Math.random()*10)) +1;
+var num1b = (Math.floor(Math.random()*10)) +1;
+var sum 1 = num1a +num1b;
+var response = parseInt(prompt("what is the sum of" +num1a + "and " +num1b +"?"));
+if ( response ==sum1)
+{
+count1 =count1 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count1 ==3)
+{
+levelTwo();
+return;
+}
+var num1a = (Math.floor(Math.random()*10)) +1;
+var num1b = (Math.floor(Math.random()*10)) +1;
+var sum 1 = num1a +num1b;
+var response = parseInt(prompt("what is the sum of" +num1a + "and " +num1b +"?"));
+if ( response ==sum1)
+{
+count1 =count1 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count1 ==3)
+{
+levelTwo();
+return;
+}
+else 
+{
+aalert ("you need more practice at this level.");
+return;
+}
+}
+ function leveTwo()
+ {
+ var count2 =0 ;
+   alert("You areat level two");
+   var num2a = (Math.floor(Math.random()*100)) +1;
+	var num2b = (Math.floor(Math.random()*100)) +1;
+	var sum 2 = num2a +num2b;
+	var response = parseInt(prompt("what is the sum of" +num2a + "and " +num2b +"?"));
+if ( response ==sum2)
+{
+count2 =count2 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count2 ==3)
+{
+levelThree();
+return;
+}
+var num2a = (Math.floor(Math.random()*100)) +1;
+	var num2b = (Math.floor(Math.random()*100)) +1;
+	var sum 2 = num2a +num2b;
+	var response = parseInt(prompt("what is the sum of" +num2a + "and " +num2b +"?"));
+if ( response ==sum2)
+{
+count2 =count2 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count2 ==3)
+{
+levelThree();
+return;
+}
+var num2a = (Math.floor(Math.random()*100)) +1;
+	var num2b = (Math.floor(Math.random()*100)) +1;
+	var sum 2 = num2a +num2b;
+	var response = parseInt(prompt("what is the sum of" +num2a + "and " +num2b +"?"));
+if ( response ==sum2)
+{
+count2 =count2 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count2 ==3)
+{
+levelThree();
+return;
+}
+else 
+{
+alert ("you need more practice at this level");
+return;
+}
+function levelThree()
+{
+  var count3=0;
+alert ("you are at level three");
+	var num3a = (Math.floor(Math.random()*100)) +1;
+	var num3b = (Math.floor(Math.random()*100)) +1;
+	var sum 3 = num3a +num3b;
+	var response = parseInt(prompt("what is the sum of" +num3a + "and " +num3b +"?"));
+if ( response ==sum3)
+{
+count3 =count3 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count3 ==3)
+{
+ alert (" That all folks! proceed to multiplication now!");
+ 
+return;
+}  
+
+	var num3a = (Math.floor(Math.random()*100)) +1;
+	var num3b = (Math.floor(Math.random()*100)) +1;
+	var num3c = (Math.floor(Math.random()*100)) +1;
+	var sum 3 = num3a +num3b +num3c;
+	var response = parseInt(prompt("what is the sum of" +num3a + "and " +num3b + " and" +num3c +"?"));
+if ( response ==sum3)
+{
+count3 =count3 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count3 ==3)
+{
+ alert (" That all folks! proceed to multiplication now!");
+ 
+return;
+}  
+
+var num3a = (Math.floor(Math.random()*100)) +1;
+	var num3b = (Math.floor(Math.random()*100)) +1;
+	var num3c = (Math.floor(Math.random()*100)) +1;
+	var sum 3 = num3a +num3b +num3c;
+	var response = parseInt(prompt("what is the sum of" +num3a + "and " +num3b + " and" +num3c +"?"));
+if ( response ==sum3)
+{
+count3 =count3 +1;
+result ="correct";
+alert (result);
+}
+else 
+{
+result ="Incorrect";
+alert(result);
+}
+if (count3 ==3)
+{
+ alert (" Thats all folks! proceed to multiplication now!");
+ return;
+}  
+else 
+{
+alert("thats all folks ! but you need more practice at this level");
+return;
+}
+}
+} 
+
+
+
+
+
+
+</script>
+</style>
+</script>
+</head>
+<body>	
+<div id="wrapper">
+<div id="header">
+	<div class="row">
+	
+		
+			<div class="col-lg-5">
+				<div class="header-logo">
+				  <img src="images/owl.jpeg" width="125" height="66" class="floatleft">
+				</div></div>
+				<div class="col-lg-7">
+				<div class="header-text"><h1><b><i> carla's Classroom</i></b></h1>
+			</div>
+
+
+
+
+</div>
+</div>
+</div>
+<div id ="navigation"><ul>
+ <li><a href="index.html" >
+ <img src="images/owlr.jpg" width="35" height="50" target="blank">
+Home</a></li>
+ <li> <a href="Meetcarla.html" >
+ <img src="images/carla_button.jpg" width="35" height="50" target="blank">
+Meet Carla</a></li>
+ <li> <a href="#" >
+ <img src="images/read_button.jpg" width="35" height="50" target="blank">
+Reading</a></li>
+ <li> <a href="spelltest.html" >
+ <img src="images/write_button.jpg" width="35" height="50" target="blank">
+writing</a></li>
+  <li><a href="Arithmatic.html" >
+ <img src="images/arith_button.jpg" width="35" height="50" target="blank">
+Arithmatic</a></li></ul>
+<ul><li><a href="Aboutme.html" >
+ <img src="images/carla_kids.jpg" width="35" height="50" target="blank">
+About  Me!</a></li></ul>
+
+
+
+</div>
+<div id="content">
+<p>
+This arithmatic test will increase in difficulty as you prove you are ready for harder problems . 
+As soon as<br> you get 3 problems correct in level one, you will progress to level two and the to level three </p>
+<input type "button" onclick = "addIt()" value ="Begin the test">
+</div>
+<div id="sub-content"><p>
+<h3><span class="style1">*</span><span class="style3">Carla's Motto: </span><span class="style2">Never miss a chance to 
+teach -- and to<br> learn!</span></h3></p>
+</div>
+</div>
+
+		
+</body>
+</html>
+
+
+
+
