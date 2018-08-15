@@ -68,6 +68,7 @@ text-align:center;
  margin-left:50px;
 margin-right:15px;
 } 
+</style>
 <script>
 function addIt()
 {
@@ -82,7 +83,7 @@ function levelOne ()
 {
 var num1a = (Math.floor(Math.random()*10)) +1;
 var num1b = (Math.floor(Math.random()*10)) +1;
-var sum 1 = num1a +num1b;
+var sum1 = num1a + num1b;
 var response = parseInt(prompt("what is the sum of" +num1a + "and " +num1b +"?"));
 if ( response ==sum1)
 {
@@ -103,7 +104,7 @@ return;
 
 var num1a = (Math.floor(Math.random()*10)) +1;
 var num1b = (Math.floor(Math.random()*10)) +1;
-var sum 1 = num1a +num1b;
+var sum1 = num1a +num1b;
 var response = parseInt(prompt("what is the sum of" +num1a + "and " +num1b +"?"));
 if ( response ==sum1)
 {
@@ -123,7 +124,7 @@ return;
 }
 var num1a = (Math.floor(Math.random()*10)) +1;
 var num1b = (Math.floor(Math.random()*10)) +1;
-var sum 1 = num1a +num1b;
+var sum1 = num1a +num1b;
 var response = parseInt(prompt("what is the sum of" +num1a + "and " +num1b +"?"));
 if ( response ==sum1)
 {
@@ -153,7 +154,7 @@ return;
    alert("You areat level two");
    var num2a = (Math.floor(Math.random()*100)) +1;
 	var num2b = (Math.floor(Math.random()*100)) +1;
-	var sum 2 = num2a +num2b;
+	var sum2 = num2a +num2b;
 	var response = parseInt(prompt("what is the sum of" +num2a + "and " +num2b +"?"));
 if ( response ==sum2)
 {
@@ -173,7 +174,7 @@ return;
 }
 var num2a = (Math.floor(Math.random()*100)) +1;
 	var num2b = (Math.floor(Math.random()*100)) +1;
-	var sum 2 = num2a +num2b;
+	var sum2 = num2a +num2b;
 	var response = parseInt(prompt("what is the sum of" +num2a + "and " +num2b +"?"));
 if ( response ==sum2)
 {
@@ -193,7 +194,7 @@ return;
 }
 var num2a = (Math.floor(Math.random()*100)) +1;
 	var num2b = (Math.floor(Math.random()*100)) +1;
-	var sum 2 = num2a +num2b;
+	var sum2 = num2a +num2b;
 	var response = parseInt(prompt("what is the sum of" +num2a + "and " +num2b +"?"));
 if ( response ==sum2)
 {
@@ -222,7 +223,7 @@ function levelThree()
 alert ("you are at level three");
 	var num3a = (Math.floor(Math.random()*100)) +1;
 	var num3b = (Math.floor(Math.random()*100)) +1;
-	var sum 3 = num3a +num3b;
+	var sum3 = num3a +num3b;
 	var response = parseInt(prompt("what is the sum of" +num3a + "and " +num3b +"?"));
 if ( response ==sum3)
 {
@@ -245,7 +246,7 @@ return;
 	var num3a = (Math.floor(Math.random()*100)) +1;
 	var num3b = (Math.floor(Math.random()*100)) +1;
 	var num3c = (Math.floor(Math.random()*100)) +1;
-	var sum 3 = num3a +num3b +num3c;
+	var sum3 = num3a +num3b +num3c;
 	var response = parseInt(prompt("what is the sum of" +num3a + "and " +num3b + " and" +num3c +"?"));
 if ( response ==sum3)
 {
@@ -268,7 +269,7 @@ return;
 var num3a = (Math.floor(Math.random()*100)) +1;
 	var num3b = (Math.floor(Math.random()*100)) +1;
 	var num3c = (Math.floor(Math.random()*100)) +1;
-	var sum 3 = num3a +num3b +num3c;
+	var sum3 = num3a +num3b +num3c;
 	var response = parseInt(prompt("what is the sum of" +num3a + "and " +num3b + " and" +num3c +"?"));
 if ( response ==sum3)
 {
@@ -300,8 +301,8 @@ return;
 
 
 </script>
-</style>
-</script>
+
+
 </head>
 <body>	
 <div id="wrapper">
@@ -350,10 +351,11 @@ About  Me!</a></li></ul>
 <p>
 This arithmatic test will increase in difficulty as you prove you are ready for harder problems . 
 As soon as<br> you get 3 problems correct in level one, you will progress to level two and the to level three </p>
-<input type "button" onclick = "addIt()" value ="Begin the test">
+<p><input type = "button" onclick ="addIt()" value = "Begin the test"></p>
 </div>
 <div id="sub-content"><p>
-<h3><span class="style1">*</span><span class="style3">Carla's Motto: </span><span class="style2">Never miss a chance to 
+<h3><span class="style1">*</span><span class="style3">Carla's Motto: </span>
+<span class="style2">Never miss a chance to 
 teach -- and to<br> learn!</span></h3></p>
 </div>
 </div>
